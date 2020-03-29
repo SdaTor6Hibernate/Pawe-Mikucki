@@ -5,8 +5,8 @@ import org.hibernate.Session;
 public class przyklad1 {
     public static void main(String[] args) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        Order country = session.find(Order.class, 1);
+       Product address = session.find(Product.class, 1);
+        System.out.println(address.toString());
         session.close();
-        System.out.println(country.toString());
     }
 }

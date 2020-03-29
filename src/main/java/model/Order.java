@@ -21,7 +21,7 @@ public class Order {
     @Column(name = "ORD_DATE")
     private LocalDateTime orderDate;
     @Column(name = "ORD_PRICE")
-    private Double orderPrice;
+    private BigDecimal orderPrice;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "ORD_USR_ID", referencedColumnName = "USR_ID")
     private User orderUser;
