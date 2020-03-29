@@ -17,8 +17,8 @@ public class Address {
     private String street;
     @Column(name="ADD_BUILDING_NO")
     private String buildingNo;
-    @Column(name="ADD_APARTMENT_NO")
-    private String apartmentNo;
+    @Column(name="ADD_APARTAMENT_NO")
+    private String apartamentNo;
     @Column(name="ADD_CITY")
     private String city;
     @Column(name= "ADD_POSTAL_CODE")
